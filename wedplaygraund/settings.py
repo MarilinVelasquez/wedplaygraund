@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8ff=mgr=&&&&&w05v=7%cw=mhux#(4^6h)64ev)yfzuobm0t0y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False  # Cambié a False para producción
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['159.203.184.113']  # Reemplaza con la IP pública de tu droplet
 
 
 # Application definition
@@ -127,3 +127,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
