@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'wedplaygraund.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',  # Cambiado para PostgreSQL
+        'NAME': 'myproyect',  # Nombre de la base de datos 
+        'USER': 'Marilyn',    # Usuario de la base de datos 
+        'PASSWORD': '2003',  # Contraseña del usuario
+        'HOST': 'localhost',  # Usar localhost si la base de datos está en el mismo servidor
+        'PORT': '5432',       # Puerto por defecto de PostgreSQL
     }
 }
 
